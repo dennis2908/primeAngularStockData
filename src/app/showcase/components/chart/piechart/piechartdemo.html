@@ -1,0 +1,56 @@
+<div class="content-section introduction">
+    <div class="feature-intro">
+        <h1>Pie Chart</h1>
+        <p>A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion.</p>
+    </div>
+    <app-demoActions github="chart/piechart"></app-demoActions>
+</div>
+
+<div class="content-section implementation">
+    <div class="card">
+        <p-chart type="pie" [data]="data" [options]="chartOptions"></p-chart>
+    </div>
+</div>
+
+<div class="content-section documentation">
+
+    <p-tabView>
+        <p-tabPanel header="Source">
+        <a href="https://github.com/primefaces/primeng/tree/master/src/app/showcase/components/chart/piechart" class="btn-viewsource" target="_blank">
+            <span>View on GitHub</span>
+        </a>
+<app-code lang="typescript" ngNonBindable ngPreserveWhitespaces>
+export class PieChartDemo &#123;
+
+    data: any;
+
+    constructor() &#123;
+        this.data = &#123;
+            labels: ['A','B','C'],
+            datasets: [
+                &#123;
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        "#FF6384",
+                        "#36A2EB",
+                        "#FFCE56"
+                    ],
+                    hoverBackgroundColor: [
+                        "#FF6384",
+                        "#36A2EB",
+                        "#FFCE56"
+                    ]
+                &#125;]    
+            &#125;;
+    &#125;
+&#125;
+</app-code>            
+        </p-tabPanel>
+
+        <p-tabPanel header="piechartdemo.html">
+<app-code lang="markup" ngNonBindable ngPreserveWhitespaces>
+&lt;p-chart type="pie" [data]="data"&gt;&lt;/p-chart&gt;
+</app-code>
+        </p-tabPanel>
+    </p-tabView>
+</div>
