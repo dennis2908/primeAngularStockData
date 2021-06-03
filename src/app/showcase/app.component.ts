@@ -13,7 +13,8 @@ declare let gtag: Function;
     styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-
+    login = "";
+  
     menuActive: boolean;
 
     newsActive: boolean = true;
@@ -26,7 +27,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
     public subscription: Subscription;
 
-    constructor(private router: Router, private configService: AppConfigService, private primengConfig: PrimeNGConfig) {}
+    constructor(private router: Router, private configService: AppConfigService, private primengConfig: PrimeNGConfig) {		
+		this.login = localStorage.getItem("NgPrimeDM");		
+	}
 
     ngOnInit() {
         this.primengConfig.ripple = true;

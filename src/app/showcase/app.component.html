@@ -1,4 +1,5 @@
-<div class="layout-wrapper" [ngClass]="{'layout-news-active': newsActive}">
+<ng-template [ngIf]="login" [ngIfElse]="Dologin">
+  <div class="layout-wrapper" [ngClass]="{'layout-news-active': newsActive}">
     <app-topbar (menuButtonClick)="onMenuButtonClick()"></app-topbar>
     <app-menu [active]="menuActive"></app-menu>
     <app-config></app-config>
@@ -9,3 +10,7 @@
         
     </div>
 </div>
+</ng-template>
+<ng-template #Dologin>
+  <app-signin></app-signin>
+</ng-template>

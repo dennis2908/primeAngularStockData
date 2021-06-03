@@ -90,6 +90,7 @@ import { Subscription } from 'rxjs';
                         <li><a [routerLink]="['/support']"><span>Support</span></a></li>
                         <li><a href="https://twitter.com/prime_ng?lang=en" target="_blank"><span>Twitter</span></a></li>
                         <li><a href="https://www.primefaces.org/whouses" target="_blank"><span>Who Uses</span></a></li>
+						<li (click)="doLogout()"><a href="#"><span>Logout</span></a></li>
                     </ul>
                 </li>
             </ul>
@@ -210,6 +211,12 @@ export class AppTopBarComponent implements OnInit, OnDestroy {
             document.removeEventListener('click', this.outsideClickListener);
             this.outsideClickListener = null;
         }
+    }
+	
+	doLogout() {
+		console.log(31132132)
+       localStorage.removeItem('NgPrimeDM');
+	   window.location.reload()  
     }
 
     toggleMenu(event: Event, index: number) {

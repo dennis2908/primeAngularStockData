@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,6 +32,7 @@ import { AppConfigComponent } from './app.config.component';
 import { AppFooterComponent } from './app.footer.component';
 import { AppInputStyleSwitchModule } from './app.inputstyleswitch.component';
 import { AppDemoActionsModule } from './app.demoactions.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 @NgModule({
     declarations: [
@@ -41,7 +42,8 @@ import { AppDemoActionsModule } from './app.demoactions.component';
         AppTopBarComponent,
         AppMenuComponent,
         AppConfigComponent,
-        AppFooterComponent
+        AppFooterComponent,
+		SigninComponent
     ],
     imports: [
         FormsModule,
@@ -55,8 +57,9 @@ import { AppDemoActionsModule } from './app.demoactions.component';
         InputSwitchModule,
         TooltipModule,
         AppInputStyleSwitchModule,
-        AppDemoActionsModule,
+        AppDemoActionsModule
     ],
+	schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
         CarService,CountryService,EventService,NodeService,IconService,CustomerService,PhotoService,VersionService,AppConfigService, ProductService
