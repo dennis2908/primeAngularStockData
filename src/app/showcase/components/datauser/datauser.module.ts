@@ -11,7 +11,7 @@ import { TableStripedDemo } from './tablestripeddemo';
 import { TablePageDemo } from './tablepagedemo';
 import { TableSortDemo } from './tablesortdemo';
 import { TableSelectionDemo } from './tableselectiondemo';
-import { TableFilterDemo } from './tablefilterdemo';
+import { Reprefilter } from './reprefilter';
 import { TableStyleDemo } from './tablestyledemo';
 import { TableLazyDemo } from './tablelazydemo';
 import { TableExportDemo } from './tableexportdemo';
@@ -21,13 +21,13 @@ import { TableScrollDemo } from './tablescrolldemo';
 import { TableVirtualScrollDemo } from './tablevirtualscrolldemo';
 import { TableFlexScrollDemo } from './tableflexscrolldemo';
 import { TableColToggleDemo } from './tablecoltoggledemo';
-import { TableCrudDemo } from './tablecruddemo';
+import { Salesitem } from './salesitem';
 import { TableResponsiveDemo } from './tableresponsivedemo';
 import { TableContextMenuDemo } from './tablecontextmenudemo';
 import { TableColResizeDemo } from './tablecolresizedemo';
 import { TableReorderDemo } from './tablereorderdemo';
 import { TableEditDemo } from './tableeditdemo';
-import { TableStateDemo } from './tablestatedemo';
+import { Reprekeyword } from './reprekeyword';
 import { TableStickyDemo } from './tablestickydemo';
 import { TableRowGroupDemo } from './tablerowgroupdemo';
 import { DataUserRoutingModule } from './datauser-routing.module';
@@ -93,7 +93,7 @@ import {AppDemoActionsModule} from '../../app.demoactions.component';
 		TablePageDemo,
 		TableSortDemo,
 		TableSelectionDemo,
-		TableFilterDemo,
+		Reprefilter,
 		TableStyleDemo,
 		TableLazyDemo,
 		TableExportDemo,
@@ -103,14 +103,14 @@ import {AppDemoActionsModule} from '../../app.demoactions.component';
         TableVirtualScrollDemo,
         TableFlexScrollDemo,
 		TableColToggleDemo,
-		TableCrudDemo,
+		Salesitem,
 		TableResponsiveDemo,
 		TableContextMenuDemo,
 		TableColResizeDemo,
 		TableReorderDemo,
 		TableEditDemo,
         TableRowGroupDemo,
-        TableStateDemo,
+        Reprekeyword,
         TableStickyDemo
 	]
 })

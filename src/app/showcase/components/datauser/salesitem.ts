@@ -5,8 +5,7 @@ import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 
 @Component({
-    templateUrl: './tablecruddemo.html',
-    styleUrls: ['./tabledemo.scss'],
+    templateUrl: './salesitem.html',
     styles: [`
         :host ::ng-deep .p-dialog .product-image {
             width: 150px;
@@ -16,7 +15,7 @@ import { MessageService } from 'primeng/api';
     `],
     providers: [MessageService,ConfirmationService]
 })
-export class TableCrudDemo implements OnInit {
+export class Salesitem implements OnInit {
 
     productDialog: boolean;
 

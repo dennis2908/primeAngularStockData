@@ -7,7 +7,7 @@ import { TableGridLinesDemo } from './tablegridlinesdemo';
 import { TableStripedDemo } from './tablestripeddemo';
 import { TablePageDemo } from './tablepagedemo';
 import { TableSortDemo } from './tablesortdemo';
-import { TableFilterDemo } from './tablefilterdemo';
+import { Reprefilter } from './reprefilter';
 import { TableSelectionDemo } from './tableselectiondemo';
 import { TableStyleDemo } from './tablestyledemo';
 import { TableLazyDemo } from './tablelazydemo';
@@ -18,14 +18,14 @@ import { TableScrollDemo } from './tablescrolldemo';
 import { TableVirtualScrollDemo } from './tablevirtualscrolldemo';
 import { TableFlexScrollDemo } from './tableflexscrolldemo';
 import { TableColToggleDemo } from './tablecoltoggledemo';
-import { TableCrudDemo } from './tablecruddemo';
+import { Salesitem } from './salesitem';
 import { TableResponsiveDemo } from './tableresponsivedemo';
 import { TableContextMenuDemo } from './tablecontextmenudemo';
 import { TableColResizeDemo } from './tablecolresizedemo';
 import { TableReorderDemo } from './tablereorderdemo';
 import { TableEditDemo } from './tableeditdemo';
 import { TableRowGroupDemo } from './tablerowgroupdemo';
-import { TableStateDemo } from './tablestatedemo';
+import { Reprekeyword } from './reprekeyword';
 import { TableStickyDemo } from './tablestickydemo';
 import { TableBasicDemo } from './tablebasicdemo';
 import { TableDynamicDemo } from './tabledynamicdemo';
@@ -43,7 +43,7 @@ import { TableDynamicDemo } from './tabledynamicdemo';
             { path: 'striped', component: TableStripedDemo },
 			{ path: 'sort', component: TableSortDemo },
 			{ path: 'selection', component: TableSelectionDemo },
-			{ path: 'filter', component: TableFilterDemo },
+			{ path: 'reprefilter', component: Reprefilter },
 			{ path: 'style', component: TableStyleDemo },
 			{ path: 'lazy', component: TableLazyDemo },
 			{ path: 'export', component: TableExportDemo },
@@ -53,14 +53,14 @@ import { TableDynamicDemo } from './tabledynamicdemo';
             { path: 'virtualscroll', component: TableVirtualScrollDemo },
             { path: 'flexscroll', component: TableFlexScrollDemo },
 			{ path: 'coltoggle', component: TableColToggleDemo },
-			{ path: 'crud', component: TableCrudDemo },
+			{ path: 'salesitem', component: Salesitem },
 			{ path: 'responsive', component: TableResponsiveDemo },
 			{ path: 'contextmenu', component: TableContextMenuDemo },
 			{ path: 'colresize', component: TableColResizeDemo },
 			{ path: 'reorder', component: TableReorderDemo },
 			{ path: 'edit', component: TableEditDemo },
             { path: 'rowgroup', component: TableRowGroupDemo },
-            { path: 'state', component: TableStateDemo },
+            { path: 'reprekeyword', component: Reprekeyword },
             { path: 'sticky', component: TableStickyDemo }
 		])
 	],

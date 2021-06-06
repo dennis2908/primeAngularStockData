@@ -12,7 +12,9 @@ import { Subscription } from 'rxjs';
         <div class="layout-topbar">
             <ul #topbarMenu class="topbar-menu">
                 <li class="topbar-submenu">
-                    <a tabindex="0" (click)="toggleMenu($event, 0)">Themes</a>
+                    <a tabindex="0" (click)="toggleMenu($event, 0)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-symmetry-horizontal" viewBox="0 0 16 16">
+  <path d="M13.5 7a.5.5 0 0 0 .24-.939l-11-6A.5.5 0 0 0 2 .5v6a.5.5 0 0 0 .5.5h11zm.485 2.376a.5.5 0 0 1-.246.563l-11 6A.5.5 0 0 1 2 15.5v-6a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .485.376zM11.539 10H3v4.658L11.54 10z"/>
+</svg> Themes</a>
                     <ul [@overlayMenuAnimation]="'visible'" *ngIf="activeMenuIndex === 0" (@overlayMenuAnimation.start)="onOverlayMenuEnter($event)">
                         <li class="topbar-submenu-header">THEMING</li>
                         <li><a [routerLink]="['/theming']"><i class="pi pi-fw pi-file"></i><span>Guide</span></a></li>
@@ -76,21 +78,13 @@ import { Subscription } from 'rxjs';
                     </ul>
                 </li>
                 <li class="topbar-submenu">
-                    <a tabindex="0" (click)="toggleMenu($event, 2)">Resources</a>
+                    <a tabindex="0" (click)="toggleMenu($event, 2)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-diamond" viewBox="0 0 16 16">
+  <path d="M7.987 16a1.526 1.526 0 0 1-1.07-.448L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468A1.526 1.526 0 0 1 16 8.013a1.526 1.526 0 0 1-.448 1.07l-6.47 6.469A1.526 1.526 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0zM8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873L8.722 8zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873L8 8.722zM7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873L7.278 8z"/>
+</svg> Action</a>
                     <ul [@overlayMenuAnimation]="'visible'" *ngIf="activeMenuIndex === 2" (@overlayMenuAnimation.start)="onOverlayMenuEnter($event)">
-
-                        <li><a href="https://www.primetek.com.tr" target="_blank"><span>About PrimeTek</span></a></li>
-                        <li><a href="https://www.primefaces.org/store" target="_blank"><span>PrimeStore</span></a></li>
-                        <li><a href="https://www.primefaces.org/category/primeng/" target="_blank"><span>Blog</span></a></li>
-                        <li><a href="https://forum.primefaces.org/viewforum.php?f=35"><span>Forum</span></a></li>
-                        <li><a href="https://discord.gg/gzKFYnpmCY"><span>Discord Chat</span></a></li>
-                        <li><a [routerLink]="['/lts']"><span>LTS</span></a></li>
-                        <li><a href="https://www.primefaces.org/newsletter" target="_blank"><span>Newsletter</span></a></li>
-                        <li><a href="https://github.com/primefaces/primeng" target="_blank"><span>Source Code</span></a></li>
-                        <li><a [routerLink]="['/support']"><span>Support</span></a></li>
-                        <li><a href="https://twitter.com/prime_ng?lang=en" target="_blank"><span>Twitter</span></a></li>
-                        <li><a href="https://www.primefaces.org/whouses" target="_blank"><span>Who Uses</span></a></li>
-						<li (click)="doLogout()"><a href="#"><span>Logout</span></a></li>
+						<li (click)="doLogout()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
+</svg><span> Logout</span></a></li>
                     </ul>
                 </li>
             </ul>

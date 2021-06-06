@@ -6,6 +6,8 @@ import {PieChartDemo} from './piechart/piechartdemo';
 import {DoughnutChartDemo} from './doughnutchart/doughnutchartdemo';
 import {BarChartDemo} from './barchart/barchartdemo';
 import {LineChartDemo} from './linechart/linechartdemo';
+import {Linechartstyle} from './linechartstyle/linechartstyle';
+import {MultiaxisLine} from './multiaxis/multiaxis';
 import {PolarAreaChartDemo} from './polarareachart/polarareachartdemo';
 import {ComboChartDemo} from './combochart/comobochartdemo';
 import {RadarChartDemo} from './radarchart/radarchartdemo';
@@ -27,13 +29,15 @@ import {AppDemoActionsModule} from '../../app.demoactions.component';
 	],
 	declarations: [
 		ChartDemo,
+		MultiaxisLine,
         PieChartDemo,
         DoughnutChartDemo,
         BarChartDemo,
         LineChartDemo,
         PolarAreaChartDemo,
         ComboChartDemo,
-        RadarChartDemo
+        RadarChartDemo,
+		Linechartstyle
 	]
 })
 export class ChartDemoModule {}

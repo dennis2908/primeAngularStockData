@@ -3,10 +3,10 @@ import { Customer } from '../../domain/customer';
 import { CustomerService } from '../../service/customerservice';
 
 @Component({
-    templateUrl: './tablestatedemo.html',
-    styleUrls: ['./tabledemo.scss']
+    templateUrl: './reprekeyword.html',
+    styleUrls: ['./datauser.scss']
 })
-export class TableStateDemo implements OnInit {
+export class Reprekeyword implements OnInit {
 
     customers1: Customer[];
 

@@ -1,12 +1,13 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './components/home/home.component';
-import { TableCrudDemo } from './components/datauser/tablecruddemo';
+import { Salesitem } from './components/datauser/salesitem';
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            {path: '', component: TableCrudDemo},
+            {path: '', component: Salesitem},
+			{path: 'salesitem', component: Salesitem},
             {path: 'setup', loadChildren: () => import('./components/setup/setup.module').then(m => m.SetupModule)},
             {path: 'theming', loadChildren: () => import('./components/theming/theming.module').then(m => m.ThemingModule)},
             {path: 'icons', loadChildren: () => import('./components/icons/icons.module').then(m => m.IconsModule)},

@@ -4,10 +4,10 @@ import { Customer, Representative } from '../../domain/customer';
 import { CustomerService } from '../../service/customerservice';
 
 @Component({
-    templateUrl: './tablefilterdemo.html',
-    styleUrls: ['./tabledemo.scss']
+    templateUrl: './reprefilter.html',
+    styleUrls: ['./datauser.scss']
 })
-export class TableFilterDemo implements OnInit {
+export class Reprefilter implements OnInit {
 
     customers: Customer[];
 
